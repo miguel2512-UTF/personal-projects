@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: #F4F7FA;
+}
+
+main {
+    margin: 4rem 0;
+}
+
+.projects-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-layout {
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    margin: 0 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+}
+
+.card-project {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border-radius: .25rem;
+    border: 1px solid rgba(31, 31, 31, 0.2);
+    box-shadow: 1px 1px 1px rgba(31, 31, 31, 0.2);
+    background-color: white;
+}
+
+.card-project img {
+    border-radius: .25rem;
+    width: 100%;
+}
+
+.card-header h2 {
+    margin: .5rem 0;
+    text-align: center;
+}
+
+.card-body {
+    padding: 0 1rem;
+}
+
+.tech-stack {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+.tech-stack img {
+    margin: 0 .25rem;
+    width: 35px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card-footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cccccc;
+    border-radius: .25rem;
+    padding: .5rem 0;
+    margin: .25rem 0;
+    text-align: center;
+    text-decoration: none;
+    transition: background .5s ease, color .5s ease;
+}
+
+.card-footer a img {
+    margin: 0 .5rem;
+    width: 5%;
+}
+
+.btn-primary {
+    color: black;
+    background: #f6f6f6;
+}
+
+.btn-primary:hover {
+    background: #e7e7e7;
+    transition: background .5s ease, color .5s ease;
+}
+
+.btn-primary:hover + .btn-toast .toast-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.btn-toast {
+    position: relative;
+}
+
+.btn-toast:hover .toast-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.toast-message {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+    border: 1px solid black;
+    border-radius: .25rem;
+    padding: .5rem 0;
+    margin: .25rem 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+}
+
+.btn-secondary {
+    color: white;
+    background: #0D1117;
+}
+
+.btn-disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}
